@@ -131,6 +131,8 @@ body.lock {
 @media (max-width: 767px) {
   .header {
     background-color: var(--text);
+    position: fixed;
+    z-index: 15;
   }
 
   .header-wrapper {
@@ -232,19 +234,13 @@ body.lock {
   .header__item:not(:first-child) {
     padding-left: 0px;
   }
-
-  .hero-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
 }
 
 /* Hero section---------------------------- */
 .hero-wrapper {
   padding-bottom: 130px;
   width: 100%;
-  height: 150vh;
+  /* height: 150vh; */
   background: url(../img/main/hero/back-desktop.jpg) 0 0 / cover no-repeat;
 }
 
@@ -262,7 +258,7 @@ body.lock {
   text-align: center;
 }
 
-.header__btn {
+.hero__btn {
   display: inline-block;
   padding: 20px 31px;
 
@@ -277,8 +273,8 @@ body.lock {
   transition: all 0.3s ease 0s;
 }
 
-.header__btn:hover,
-.header__btn:focus {
+.hero__btn:hover,
+.hero__btn:focus {
   color: var(--accent);
   border: 3px solid var(--accent);
 }
@@ -303,4 +299,56 @@ body.lock {
   color: var(--main-light);
 
   text-align: center;
+}
+
+/* ---------------------------------------- */
+.hero-img {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.hero-img__hand {
+  position: relative;
+  max-width: 100%;
+  top: 227px;
+}
+
+.hero-img__screen {
+  position: absolute;
+  left: 570px;
+  top: 291px;
+  max-width: 100%;
+}
+
+/* Hero mobile section--------------------- */
+@media (max-width: 767px) {
+  .hero-content {
+    padding-top: 89px;
+    /* margin-bottom: 300px; */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero__title {
+    font-size: 24px;
+  }
+
+  .hero__btn {
+    margin-top: 350px;
+  }
+
+  .hero-img__hand {
+    left: -50px;
+  }
+
+  .hero-img__screen {
+    top: 250px;
+    left: 162px;
+    max-width: 86px;
+  }
+
+  .hero;
 }
