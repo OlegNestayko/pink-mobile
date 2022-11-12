@@ -208,6 +208,7 @@ body.lock {
 
   .header-menu.active {
     top: 0;
+    overflow-y: auto;
   }
 
   .header__list {
@@ -343,7 +344,7 @@ body.lock {
 
   .hero-img__hand {
     left: -50px;
-    background: url(../img/main/hero/screen-mobile.png) 209px 11px /92px 166px no-repeat;
+    background: url(../img/main/hero/screen-mobile.png) 192px 11px /83px 161px no-repeat;
   }
 
   .hero-img__screen {
