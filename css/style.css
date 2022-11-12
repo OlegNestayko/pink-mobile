@@ -240,7 +240,7 @@ body.lock {
 .hero-wrapper {
   padding-bottom: 130px;
   width: 100%;
-  /* height: 150vh; */
+
   background: url(../img/main/hero/back-desktop.jpg) 0 0 / cover no-repeat;
 }
 
@@ -312,13 +312,14 @@ body.lock {
   position: relative;
   max-width: 100%;
   top: 227px;
+  background: url(../img/main/hero/screen.png) 570px 65px no-repeat;
 }
 
 .hero-img__screen {
-  position: absolute;
+  /* position: absolute;
   left: 570px;
   top: 291px;
-  max-width: 100%;
+  max-width: 100%; */
 }
 
 /* Hero mobile section--------------------- */
@@ -342,6 +343,7 @@ body.lock {
 
   .hero-img__hand {
     left: -50px;
+    background: url(../img/main/hero/screen-mobile.png) 209px 11px /92px 166px no-repeat;
   }
 
   .hero-img__screen {
@@ -349,6 +351,4 @@ body.lock {
     left: 162px;
     max-width: 86px;
   }
-
-  .hero;
 }
