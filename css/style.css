@@ -24,6 +24,7 @@
   --accent: #d22856;
 
   --text: #283645;
+  --section-bgc: #f2f2f2;
 }
 
 body {
@@ -393,9 +394,6 @@ body.lock {
   background: url(../img/main/offer/grey-background.png) bottom/contain no-repeat;
 }
 
-.offer-wrapper {
-}
-
 /* ---------------------------------------- */
 .offer__title {
   padding-top: 77px;
@@ -410,6 +408,7 @@ body.lock {
 /* ---------------------------------------- */
 .offer__list {
   padding: 72px 0px 59px;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -441,7 +440,8 @@ body.lock {
 
 .offer-mobile {
   display: none;
-  background-color: #f2f2f2;
+
+  background-color: var(--section-bgc);
 }
 /* Offer mobile section-------------------- */
 @media (max-width: 767px) {
@@ -461,6 +461,7 @@ body.lock {
 
   .offer__list {
     flex-direction: column;
+
     background: url(../img/main/offer/grey-background.png) bottom/cover no-repeat;
   }
 
@@ -470,6 +471,70 @@ body.lock {
 
   .offer-mobile {
     display: block;
+
     text-align: center;
+  }
+}
+
+/* Effect section-------------------------- */
+.effect {
+  background-color: var(--section-bgc);
+}
+
+.effect-wrapper {
+  padding: 17px 0px 67px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ---------------------------------------- */
+.effect__img {
+  max-width: 100%;
+}
+
+/* ---------------------------------------- */
+.effect__content {
+  margin-left: 70px;
+}
+
+.effect__title {
+  padding-bottom: 38px;
+}
+
+.effect__desc {
+  padding-bottom: 46px;
+}
+
+.effect__link {
+  padding: 10px;
+  margin-left: -10px;
+
+  line-height: calc(30 / 18);
+  color: var(--accent);
+
+  text-decoration-line: underline;
+  border: 1px solid transparent;
+  border-radius: 9px;
+
+  transition: all 0.5s ease 0s;
+}
+
+.effect__link:hover,
+.effect__link:focus {
+  padding: 10px;
+
+  color: var(--main-light);
+
+  background-color: var(--accent);
+
+  border: 1px solid var(--accent);
+}
+
+/* Effect mobile section------------------- */
+@media (max-width: 767px) {
+  .effect {
+    display: none;
   }
 }
