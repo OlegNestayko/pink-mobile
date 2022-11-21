@@ -7,6 +7,7 @@ $(document).ready(function () {
 });
 
 // Slick slider
+// slider section
 $(document).ready(function () {
   $('.slider-slick').slick({
     responsive: [

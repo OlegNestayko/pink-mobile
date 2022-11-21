@@ -557,7 +557,7 @@ body.lock {
 /* Slider section-------------------------- */
 
 .slider-wrapper {
-  padding-bottom: 200px;
+  padding-bottom: 100px;
 }
 
 /* ---------------------------------------- */
@@ -611,6 +611,10 @@ body.lock {
   .fa-solid.fa-quote-left,
   .fa-solid::before {
     display: none;
+  }
+
+  .slider-wrapper {
+    padding-bottom: 60px;
   }
 
   .slick__body figure {
@@ -720,4 +724,106 @@ body.lock {
   border: none;
   border-radius: 50%;
   background-color: var(--text);
+}
+
+/* Price section--------------------------- */
+.price {
+  padding-top: 100px;
+
+  background-color: #e3dbdb;
+}
+
+/* ---------------------------------------- */
+.price__list {
+  padding-bottom: 98px;
+
+  display: flex;
+
+  justify-content: space-between;
+}
+
+/* ---------------------------------------- */
+
+.header-price__title {
+  font-weight: var(--secondary-fw);
+  line-height: calc(30 / 18);
+  color: var(--main-light);
+
+  background-color: var(--text);
+  border-top: 1px solid var(--text);
+}
+
+.header-price__title span {
+  padding-right: 10px;
+
+  font-weight: var(--light-fw);
+  font-size: 24px;
+  line-height: calc(30 / 24);
+  color: #ffffff;
+
+  text-transform: uppercase;
+}
+
+.header-price__title,
+.content-price__text {
+  display: inline-block;
+}
+
+/* ---------------------------------------- */
+.header-price__title,
+.content-price {
+  padding-left: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 254px;
+  height: 59px;
+
+  border: 1px solid var(--text);
+}
+
+.content-price {
+  border-top: none;
+}
+
+.content-price__text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  line-height: calc(30 / 18);
+}
+
+/* ---------------------------------------- */
+.fa-xmark {
+  padding-right: 20px;
+
+  color: #f25b26;
+}
+
+.fa-check {
+  padding-right: 10px;
+
+  color: #3dc644;
+}
+
+.fa-xmark,
+.fa-check {
+  padding-top: 0;
+  padding-bottom: 0;
+
+  font-size: 36px;
+}
+
+/* price mobile section-------------------- */
+@media (max-width: 767px) {
+  .price__list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .price__item:not(:first-child) {
+    padding-top: 25px;
+  }
 }
