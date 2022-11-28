@@ -749,6 +749,8 @@ body.lock {
   line-height: calc(30 / 18);
   color: var(--main-light);
 
+  text-transform: uppercase;
+
   background-color: var(--text);
   border-top: 1px solid var(--text);
 }
@@ -818,12 +820,120 @@ body.lock {
 
 /* price mobile section-------------------- */
 @media (max-width: 767px) {
-  .price__list {
+  .price__list.price-mobile {
+    /* flex-direction: row;
+    justify-content: center;
+    align-items: center; */
+    min-width: 0;
+  }
+  .price__list .price__item:not(:first-child) {
+    padding-top: 25px;
+  }
+
+  .fa-xmark::before,
+  .fa-check::before {
+    display: block;
+
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 100%;
+    padding-right: 0px;
+    font-size: 36px;
+  }
+
+  .price__item {
+    display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  .price__item:not(:first-child) {
-    padding-top: 25px;
+  .price-mobile .slick-arrow {
+    font-size: 0;
+    /* width: 50px;
+    height: 20px;
+    background-color: #3dc644;
+    border: 1px solid green;
+    border-radius: 50%; */
   }
+
+  .price-mobile .slick-arrow.slick-prev {
+    margin-top: 30%;
+    margin-left: 10px;
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+
+    border-right: 20px solid var(--text);
+    background-color: transparent;
+  }
+
+  .price-mobile .slick-arrow.slick-next {
+    margin-right: 10px;
+    margin-top: 30%;
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+
+    border-left: 20px solid var(--text);
+    background-color: transparent;
+  }
+
+  .price-mobile .slick-arrow.slick-disabled {
+    opacity: 0.2;
+  }
+}
+/* Слайдер */
+.slick-slider {
+}
+/* Слайдер запущен */
+.slick-slider.slick-initialized {
+}
+/* Слайдер с точками */
+.slick-slider.slick-dotted {
+}
+/* Ограничивающая оболочка */
+.slick-list {
+}
+/* Лента слайдов */
+.slick-track {
+}
+/* Слайд */
+.slick-slide {
+}
+/* Слайд активный (показывается) */
+.slick-slide.slick-active {
+}
+/* Слайд основной */
+.slick-slide.slick-current {
+}
+/* Слайд по центру */
+.slick-slide.slick-center {
+}
+/* Клонированный слайд */
+.slick-slide.slick-cloned {
+}
+/* Стрелка */
+.slick-arrow {
+}
+/* Стрелка влево */
+.slick-arrow.slick-prev {
+}
+/* Стрелка вправо */
+.slick-arrow.slick-next {
+}
+/* Стрелка не активная */
+.slick-arrow.slick-disabled {
+}
+/* Точки (булиты) */
+.slick-dots {
+}
+.slick-dots li {
+}
+/* Активная точка */
+.slick-dots li.slick-active {
+}
+/* Элемент точки */
+.slick-dots li button {
 }

@@ -21,3 +21,20 @@ $(document).ready(function () {
     ],
   });
 });
+
+$(window).ready(function () {
+  if ($(window).width() < 768) {
+    return $('.price__list').addClass('price-mobile');
+  } else {
+    return $('.price__list').removeClass('price-mobile');
+  }
+});
+
+$(document).ready(function () {
+  $('.price-mobile').slick({
+    arrows: true,
+    dots: false,
+    infinite: false,
+    slidesToShow: 1,
+  });
+});
