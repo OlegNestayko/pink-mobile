@@ -6,6 +6,13 @@ $(document).ready(function () {
   });
 });
 
+$(document).ready(function () {
+  $('.header__link').click(function (e) {
+    $('.header-burger,.header-menu').removeClass('active');
+    $('body').removeClass('lock');
+  });
+});
+
 // Slick slider
 // slider section
 $(document).ready(function () {
@@ -22,6 +29,9 @@ $(document).ready(function () {
   });
 });
 
+// Price mobile section
+
+// Add class
 $(window).ready(function () {
   if ($(window).width() < 768) {
     return $('.price__list').addClass('price-mobile');
@@ -30,6 +40,7 @@ $(window).ready(function () {
   }
 });
 
+// price section slider
 $(document).ready(function () {
   $('.price-mobile').slick({
     arrows: true,

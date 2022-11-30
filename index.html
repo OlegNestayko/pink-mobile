@@ -18,7 +18,7 @@
 
 <body>
 
-	<div class="wrapper">
+	<div id="top" class="wrapper">
 
 		<!--Header-->
 		<header class="header">
@@ -37,19 +37,19 @@
 					<ul class="header__list list">
 
 						<li class="header__item">
-							<a href="./index.html" class="header__link link">Главная</a>
+							<a href="#top" class="header__link link">Главная</a>
 						</li>
 
 						<li class="header__item">
-							<a href="#" class="header__link link">Фотографии</a>
+							<a href="#foto" class="header__link link">Фотографии</a>
 						</li>
 
 						<li class="header__item">
-							<a href="#" class="header__link link">Конкурс</a>
+							<a href="#competition" class="header__link link">Конкурс</a>
 						</li>
 
 						<li class="header__item">
-							<a href="#" class="header__link link">Контакты</a>
+							<a href="#contacts" class="header__link link">Контакты</a>
 						</li>
 
 					</ul>
@@ -72,21 +72,25 @@
 							на жизнь
 							иначе!</h1>
 						<div class="hero-mobile">
-							<a href="#" class="hero__btn link"> Скачать приложение</a>
+							<a href="https://www.google.com.ua/?hl=ru" class="hero__btn link"
+								rel="nofollow noopener noreferrer"> Скачать приложение</a>
 							<ul class="hero__list list">
 								<li class="hero__item">
-									<a href="#" class="hero__link link">
+									<a href="https://www.apple.com/store" class="hero__link link" target="_blank"
+										rel="nofollow noopener noreferrer">
 										<img src="./img/main/hero/apple-logo.png" alt="apple-logo" class="hero__pic" width="58">
 									</a>
 								</li>
 								<li class="hero__item">
-									<a href="#" class="hero__link link">
+									<a href="https://www.android.com/intl/ru_ru/" class="hero__link link" target="_blank"
+										rel="nofollow noopener noreferrer">
 										<img src="./img/main/hero/android-logo.png" alt="android-logo" class="hero__pic"
 											width="59">
 									</a>
 								</li>
 								<li class="hero__item">
-									<a href="#" class="hero__link link">
+									<a href="https://www.microsoft.com/ru-tj/store/b/home" class="hero__link link"
+										target="_blank" rel="nofollow noopener noreferrer">
 										<img src="./img/main/hero/microsoft-logo.png" alt="microsoft-logo" class="hero__pic"
 											width="61">
 									</a>
@@ -110,7 +114,7 @@
 						<span class="title-center">Нам есть, что вам</span>
 						предложить!
 					</h2>
-					<ul class="offer__list list">
+					<ul id="competition" class="offer__list list">
 						<li class="offer__item">
 							<img src="./img/main/offer/phone1.png" alt="phone" class="offer__img">
 							<h3 class="offer__subtitle subtitle">Поднимает
@@ -136,7 +140,8 @@
 								и заводите новых</p>
 						</li>
 					</ul>
-					<div class="offer-mobile"><img src="./img/main/offer/phone3.png" alt="phone" class="offer-mobile__img">
+					<div id="foto" class="offer-mobile"><img src="./img/main/offer/phone3.png" alt="phone"
+							class="offer-mobile__img">
 					</div>
 
 				</div>
@@ -274,10 +279,65 @@
 				</div>
 			</section>
 
+			<!-- Contacts -->
+			<section id="contacts" class="contacts">
+				<div class="contacts-wrapper">
+					<div class="contacs-header section">
+						<h2 class="contacts__title title">Остались вопросы?
+							<span>Свяжитесь с нами!</span>
+						</h2>
+						<ul class="contacts__list list">
+							<li class="contacts__item">
+								<h3 class="contacts__subtitle">Звоните:</h3>
+								<a href="tel:+78125556666" class="contacts__link link">+7 (812) 555-66-66</a>
+							</li>
+							<li class="contacts__item">
+								<h3 class="contacts__subtitle">Приезжайте в гости:</h3>
+								<a href="https://goo.gl/maps/BwtiUUmC1faBtbFn8" target="_blank"
+									rel="nofollow noopener noreferrer" class="contacts__link link">Нью-Йорк</a>
+							</li>
+							<li class="contacts__item">
+								<h3 class="contacts__subtitle">Пишите:</h3>
+								<a href="mailto:mail@htmlacademy.ru" class="contacts__link link">mail@htmlacademy.com</a>
+							</li>
+						</ul>
+					</div>
+					<a href="https://goo.gl/maps/BwtiUUmC1faBtbFn8" target="_blank" rel="nofollow noopener noreferrer"
+						class="contacs-map" title="go to google maps">
+						<img src="./img/main/contacts/new-york.jpg" width="1200" alt="New York" class="contacts__img">
+					</a>
+				</div>
+			</section>
+
 		</main>
 
 		<!--Footer-->
-		<footer></footer>
+		<footer class="footer">
+			<div class="footer-wrapper section">
+				<a href="#top" class="footer__logo">
+					<img src="./img/footer/footer-logo.png" alt="logo" class="footer__pic" width="147">
+				</a>
+				<ul class="footer__list list">
+					<li class="footer__item">
+						<a href="#" class="footer__link link">
+							<i class="fa-brands fa-twitter"></i>
+						</a>
+					</li>
+					<li class="footer__item">
+						<a href="#" class="footer__link link">
+							<i class="fa-brands fa-facebook-f"></i>
+						</a>
+					</li>
+					<li class="footer__item">
+						<a href="#" class="footer__link link">
+							<i class="fa-brands fa-youtube"></i>
+						</a>
+					</li>
+				</ul>
+
+			</div>
+
+		</footer>
 
 	</div>
 
